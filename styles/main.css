@@ -1,0 +1,440 @@
+/* GERAL */
+
+body {
+  max-width: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  font-family: arial;
+  font-size: 20px;
+  width: 350px;
+  height: 200px;
+  /* Setup */
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+main{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  flex-grow: 1;
+  padding: 1rem 0 1rem;
+}
+
+/* HEADER E NAVBAR */
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  max-width: inherit;
+  margin: auto;
+  padding: 1rem 0 1rem;
+  top: 0;
+}
+
+#barra-superior{
+  margin-top: -25px;
+  padding-top: 15px;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#navbar-toggler {
+  /* PROBLEMA DA BARRA BRANCA ENTRE O HEADER E O MAIN É AQUI */
+  /* margin-top: 10; */
+  margin-bottom: 15px;
+  padding: 5px 10px 5px;
+  background-color:#dfdfdf;
+}
+
+#logo {
+  padding-top: 10px;
+  width: 50px;
+}
+
+/* MENU LATERAL */
+
+#offcanvasNavbar,#closebutton {
+  text-align: end;
+  align-items: end;
+  background-color: #D9D9D9;
+}
+
+#closebutton {
+  margin-top: 30px;
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.nav-item a{
+  color: #000000;
+  font-size: 25px;
+  padding-top: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+  overflow: hidden;
+  background-color: #d9d9d9;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: inherit;
+}
+
+.barra-inferior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding: 15px;
+  margin-bottom: -25px;
+  margin-top: -5px;
+}
+
+.clima {
+  margin-left: 15px;
+}
+
+.p-clima, .p-tarifa, .p-mapa{
+  color:#48B0C7;
+}
+
+/* Tarifa - Icones - Precos - Textos */
+
+.titulo {
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.titulo h1, .titulo h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.veiculos i {
+  margin-right: 10px;
+}
+
+.veiculos {
+  font-size: 20px;
+  margin-bottom: 75px;
+}
+
+.price {
+  background: gray;
+  padding: 5px;
+}
+
+/* Inicio do maps */
+
+.maps{
+  align-items:center;
+  justify-content: center;
+}
+
+.locate{
+  padding: 2px;
+  width: 375px;
+}
+
+.trocar{
+  float: right;
+  background: #D9D9D9;
+  height: 45px;
+  width: 125px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: -40px;  
+  border: 1px solid black;
+  border-radius: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.trocar i{
+  margin-top: 12px;
+  font-size: 20px;
+  color: black;
+  float: left;
+  margin-left: 12px;
+}
+
+.trocar p{
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: -2px;
+  line-height: 1.3;
+}
+
+.locate img{
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  object-position: center;
+  margin-top: 60px;
+}
+
+.locate{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cidade{
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 32px;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+/* RECUPERAR SENHA */
+
+.recover {
+  margin-top: 10%;
+  color: rgb(131, 131, 131);
+}
+
+button {
+  margin-top: 10%;
+}
+
+/* LINK */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+}
+
+a {
+  color: black;
+}
+
+/* POP-UP CADASTRO*/
+.popup {
+  width: 300px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: rgb(148, 148, 148);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, 25%) scale(1);
+}
+
+.btn {
+  padding: 10px 40px;
+  background-color: #2b2e4a;
+  color: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.btn2 {
+  padding: 10px 60px;
+  background-color: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+/* POP-UP MAPA*/
+
+.popup-mapa {
+  width: 300px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #c5c5c5;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding-bottom: 15px;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup-mapa {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, 25%) scale(1);
+}
+
+.btn-mapa{
+  padding: 10px 50px;
+  background-color: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 30px;
+}
+
+.popup-mapa p{
+  margin-bottom: -1rem;
+}
+/* MAPA */
+
+
+/* TERMOS */
+
+.termos{
+  font-family: arial;
+  font-size: 18px;
+  width: 350px;
+  height: 200px;
+  /* Setup */
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.termos p {
+  text-align: justify;
+}
+
+/* CLIMA SANTOS E GUARUJA */
+
+.mainclima {
+  padding: 0;
+  margin: 0;
+  margin-top: 150px;
+}
+
+.santos {
+  float: left;
+  background-color: #b8ebf2;
+  margin-top: -70px;
+  padding-top: 60px;
+  padding-right: 7px;
+  border-right: solid black 0.5px;
+}
+
+.guaruja {
+  float: right;
+  background-color: #eaf2b8;
+  margin-top: -70px;
+  padding-top: 67px;
+  padding-right: 7px;
+  border-left: solid black 0.5px;
+}
+
+.info-santos{
+  text-align: start;
+  padding-left: 30px;
+}
+
+.info-guaruja{
+  text-align: start;
+  padding-left: 15px;  
+  padding-right: 10px;
+}
+
+.guaruja svg{
+  margin-top: -25px;
+}
+
+.santos svg{
+  margin-top: -10px;
+}
+
+.temperatura{
+  margin-top: 10px;
+}
+
+.umidade-santos, .umidade-guaruja{
+  margin-top: 75px;
+  margin-bottom: 125px;
+  color: #e4e3e3;
+  text-align: justify;
+  margin-left: 10px;
+}
+
+.umidade-santos svg{
+  margin-bottom: -5px;
+}
+
+.umidade-guaruja svg{
+  margin-bottom: -21px;
+}
+
+
+
+.fundo{
+  margin-left: 5px;
+  background-color: #000000;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+/* SOBRE NÓS */
+
+.cintia, .gustavo{
+  text-align: start;
+}
+
+.eduardo, .eduardo p{
+  text-align: end;
+}
+
+
+.equipe svg {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.sobre-nos{
+  font-family: arial;
+  font-size: 18px;
+  width: 350px;
+  height: 200px;
+  /* Setup */
+  position: fixed;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.sobre-nos p:not(.equipe p) {
+  text-align: justify;
+}

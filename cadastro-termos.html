@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro termos de serviço</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="termos"> 
+        <h1>Termos de Serviço</h1>
+        <p>1. O uso do aplicativo é restrito a pessoas com 16 anos de idade ou mais. Menores de idade devem obter o consentimento de um responsável legal antes de utilizar o aplicativo.<br></p>
+        <p>2. Você é responsável por fornecer informações precisas e atualizadas ao utilizar o aplicativo. Não nos responsabilizamos por quaisquer consequências decorrentes de informações incorretas fornecidas por você.<br></p>
+        <p>3. O aplicativo fornece informações sobre as travessias de balsas, mas não é responsável pela operação das balsas em si. Não nos responsabilizamos por quaisquer atrasos, cancelamentos, danos ou perdas ocorridas durante as travessias.<br></p>
+        <button class="btn" onclick="openPopup()">Avançar</button>
+        <button class="btn" onclick="window.location.href = './cadastro.html'">Voltar</button>
+        <div class="popup" id="popup">
+            <p>Tem certeza que deseja se cadastrar no aplicativo ?</p>
+            <button type="submit" class="btn2" onclick="window.location.href = './clima.html'">Confirmar</button>
+            <button type="submit" class="btn2" onclick="closePopup()">Voltar</button>
+        </div>
+    </div>
+   
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
