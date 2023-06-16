@@ -150,6 +150,7 @@ footer {
 }
 
 .locate{
+  margin-top: -75px;
   padding: 2px;
   width: 375px;
 }
@@ -437,4 +438,10 @@ a {
 
 .sobre-nos p:not(.equipe p) {
   text-align: justify;
+}
+
+.info-mapa{
+  margin-top: 50px;
+  padding-top: 25px;
+  font-weight: bold;
 }
